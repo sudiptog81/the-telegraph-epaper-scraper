@@ -7,7 +7,7 @@ count = 1
 notify = Notify()
 date_today = date.today().strftime("%d%m%Y")
 
-while True:
+while (count <= 12):
     request_url = "https://epaper.telegraphindia.com/epaperimages" + \
         f"////{date_today}////{date_today}" + \
         f"-md-hr-{str(count)}ll.png"
@@ -24,7 +24,7 @@ while True:
 
 new_count = 1
 
-while True:
+while (new_count <= 12):
     request_url = "https://epaper.telegraphindia.com/epaperimages" + \
         f"////{date_today}////{date_today}" + \
         f"-md-ct2-{str(new_count)}ll.png"
